@@ -1,0 +1,15 @@
+{
+  "name": "minerva",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "material-ui": "next",
+    "next": "beta",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
