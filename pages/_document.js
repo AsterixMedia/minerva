@@ -1,6 +1,6 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
-import { getContext, setContext } from '../styles/materialContext'
+import { getContext, setContext } from '../lib/materialContext'
 
 export default class MyDocument extends Document {
   static async getInitialProps (ctx) {
@@ -20,7 +20,6 @@ export default class MyDocument extends Document {
     return (
       <html lang='en'>
         <Head>
-          <title>My page</title>
           <meta charSet='utf-8' />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta
@@ -34,16 +33,13 @@ export default class MyDocument extends Document {
           <meta name='theme-color' content={context.theme.palette.primary[500]} />
           <link
             rel='stylesheet'
-            href='https://fonts.googleapis.com/css?family=Roboto:300,400,500'
-          />
+            href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' />
           <link
             rel='stylesheet'
-            href='https://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css'
-          />
+            href='https://cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css' />
           <link
             rel='stylesheet'
-            href='https://fonts.googleapis.com/icon?family=Material+Icons'
-          />
+            href='https://fonts.googleapis.com/icon?family=Material+Icons' />
         </Head>
         <body>
           <Main />

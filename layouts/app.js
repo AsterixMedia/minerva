@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { JssProvider } from 'react-jss'
 import { withStyles, createStyleSheet, MuiThemeProvider } from 'material-ui/styles'
-import { getContext } from '../styles/materialContext'
+import { getContext } from '../lib/materialContext'
 
 // Apply some reset
 const styleSheet = createStyleSheet('App', theme => ({
